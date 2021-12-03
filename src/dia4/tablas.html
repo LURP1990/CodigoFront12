@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 4 - Tablas</title>
+</head>
+
+<body>
+    <!-- Etiquetas para tablas -->
+    <!-- por de fault una tabla no tiene bordes -->
+    <table border="1">
+        <!-- Una tabla esta compuesta por una cabecera y cuerpo -->
+        <!-- Existe el table header qu es la cabecera de mi tablas -->
+        <thead>
+            <!-- thead es el contenedor mi cabecera -->
+            <!-- para poder definir los elementos de mi cabecera deb estar dentro de una fila -->
+            <tr>
+                <!-- Una fila esta compuesta por uno o varios elementos -->
+                <!-- Para definir un elemento debe estar dentro de una celda -->
+                <!-- Cuando es una cabecera la etiqueta del elemento se llama th -->
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Celular</th>
+                <th>Correo</th>
+                <th>Fecha de nacimiento</th>
+                <th>edad</th>
+            </tr>
+        </thead>
+        <!-- El cuerpo de la tabla va abajo del thead -->
+        <!-- El cuerpo de la tabla es el contenedor de los datos -->
+        <tbody>
+            <!-- Al igual que thead tenias filas nuestro body tambien tiene filas -->
+            <tr>
+                <!-- Los elementos que estan dentro de las filas en el cuerpo de las tablas se llaman td -->
+                <td>Luis</td>
+                <td>Rojas</td>
+                <td>999999999</td>
+                <td>luis@gmail.com</td>
+                <td>12/12/127</td>
+            </tr>
+            <tr>
+
+                <td>Lucas</td>
+                <td>Zapata</td>
+                <td>393939</td>
+                <td>lucas@gmail.com</td>
+                <td>12/12/127</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>tabla si nhead y sin body</h2>
+    <table>
+        <tr>
+            <td>Curso</td>
+            <td>Profesor</td>
+            <td>Cantidad alumnos</td>
+            <td>Hora</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Juan</td>
+            <td>50</td>
+            <td>10:00</td>
+        </tr>
+    </table>
+    <h2>Tabla de usuario con imagenes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Foto</th>
+                <th>Github</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Juan</strong></td>
+                <td><i>Perez</i></td>
+                <td><u>50</u></td>
+                <td>
+                    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/08/fotos-perfil-whatsapp_16.jpg?itok=fl2H3Opv"
+                        width="100" alt="">
+                </td>
+                <td>
+                    <a href="https://github.com/LURP1990/CodigoFront12">Link de github</a>
+                </td>
+                <td>
+                    <iframe src="../../files/examen.pdf" width="500" height="500" frameborder="0"></iframe>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- TAREA: CREAR UNA TABL DE 10 FILAS SOBRE ALGÙN TEMA -->
+    <table border="2">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>NOMBRE</th>
+                <th>RAZA</th>
+                <th>IMAGEN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Maya</td>
+                <td>cocker</td>
+                <td> <img src="https://misanimales.com/wp-content/uploads/2021/07/cocker-spaniel-cara.jpg" width="100"
+                        alt=""></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rambo</td>
+                <td>Doberman</td>
+                <td> <img
+                        src="https://www.hola.com/imagenes/estar-bien/20201202180412/perro-doberman-raza-perro-mitos/0-896-732/dobermann-t.jpg"
+                        width="100" alt=""></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Alan</td>
+                <td> golden retriever</td>
+                <td> <img
+                        src="https://www.mividaporunperro.com/wp-content/uploads/2019/03/golden-retriever-perro-raza-grande-caracteristicas.jpg"
+                        width="100" alt=""></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>lucas</td>
+                <td> shitzu</td>
+                <td> <img
+                        src="https://animalesmascotas.com//wp-content/uploads/2018/01/fotos-de-perros-de-raza-shih-tzu-perro-pelo-largo-istock.jpg"
+                        width="100" alt=""></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Marquez</td>
+                <td> schnauzer</td>
+                <td> <img src="https://i.ytimg.com/vi/TTgNYjNIdxg/sddefault.jpg" width="100" alt=""></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Piter</td>
+                <td> gran danes</td>
+                <td> <img
+                        src="https://www.hola.com/imagenes/estar-bien/20200629170949/razas-perro-gran-danes-gt/0-841-561/gran-danes1-t.jpg"
+                        width="100" alt=""></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>andy</td>
+                <td> rottweiler</td>
+                <td> <img src="https://i.ytimg.com/vi/J2Fdt0M3P2Y/maxresdefault.jpg" width="100" alt=""></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>salmon</td>
+                <td> pitbull</td>
+                <td> <img src="https://soyunperro.com/wp-content/uploads/2019/02/pitbull-corriendo.jpg" width="100"
+                        alt=""></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>gigi</td>
+                <td> cocker american</td>
+                <td> <img src="https://zoovetesmipasion.com/wp-content/uploads/2018/04/Cocker-Spaniel-Americano-1.jpg"
+                        width="100" alt=""></td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>azul</td>
+                <td> husky</td>
+                <td> <img
+                        src="https://www.wasky.es/wp-content/uploads/photo-of-siberian-husky-puppy-2853130-1200x675.jpg"
+                        width="100" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Rowspan y colspan</h2>
+    <!-- Este concepto se basa en poder alterar la informaciòn demi tabla y poder combinar columnas -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre </th> 
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Correo</th>
+                <th colspan="2">foto y numero</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Juan Pêrez</td>
+                <td>22</td>
+                <td>juap@gmail.com</td>
+                <td><img src="../../imagenes/captura_codigo.PNG" width="100" alt=""> </td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Rowspan</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Curso</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">HTML</td>
+                <td>JUAN</td>
+                <td>PEREZ</td>
+                <td>30</td>
+            </tr>
+            <tr>
+               
+                <td>JUAN</td>
+                <td>PEREZ</td>
+                <td>30</td>
+            </tr>
+            <tr>
+               
+                <td>JUAN</td>
+                <td>PEREZ</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td rowspan="3">PHP</td>
+                <td>JUAN</td>
+                <td>PEREZ</td>
+                <td>30</td>
+            </tr>
+            <tr>
+               
+                <td>JUAN</td>
+                <td>PEREZ</td>
+                <td>30</td>
+            </tr>
+            <tr>
+               
+                <td>JUAN</td>
+                <td>PEREZ</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

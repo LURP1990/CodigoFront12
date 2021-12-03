@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- Los formularios en html son muy comunes los vamos a encontrar en toda web -->
+    <!-- form de login -->
+    <!-- form de registro -->
+    <!-- form de contacto -->
+    <!-- form de new -->
+    <!-- Un formulario esta compuesto por -->
+    <!-- input (cajas de text, numero, fecha, color, email, password) -->
+    <!-- botones para poder neviar la info -->
+    <!-- select (son menus desplegables) -->
+    <!-- Todo esto esta envuelto en un formulario form -->
+    <!-- El form tiene atributos por ejemplo -->
+    <!-- action: es doinde se va enviar la info (es todo lo que veremos en back) -->
+    <!-- method: es laforma en la que la informaciòn sera enviada (javascrip) -->
+    <form action="" method></form>
+    <!-- Ojo demos de poner nuestros input dentro del form, es decir el form engloba las etiquetas input  button -->
+    <!-- El input es una caja de texto la cual se cierra asi misma, esta tieen como type, el cual indida de que -->
+    <!-- placeholder: es un texto de ayuda -->
+    <!-- value: es el valor que se le puede dar a un input -->
+    <!-- name: que basicamentees el nombre que se le puede asignar a un input -->
+    <h4>Input texto</h4>
+    <!-- En los formularios puedo poner restricciones  -->
+    <!-- puedo indicar que input sonrequeridos que se ejecute laaccion -->
+    <!-- Fieldset -->
+    <!-- un fieldser sirve como contenedor o caja de datos, pero tiene la propiedad que se le puede poner una leyend-->
+    <fieldset> 
+        <legend>Informaciòn de la persona</legend>
+    <input 
+    type="text"
+    placeholder="Ingrese nombre"
+    value="pepito"
+    name="nombre"
+    maxlength="10"
+    minlength="5"
+    />
+    <h4>Input number</h4>
+    <input type="number" placeholder="Ingrese numero" name="numero">
+    <h4>Input fecha</h4>
+    <input type="date" placeholder="Ingrese fecha" name="fecha">
+    <h4>Input hora</h4>
+    <input type="time" placeholder="Ingrese hora" name="hora">
+    <h4>Input color</h4>
+    <input type="color" placeholder="Ingrese un color" name="color">
+    <h4>Input password</h4>
+    <input type="password" placeholder="Ingrese password" name="password">
+    <h4>Input correo</h4>
+    <input type="email" placeholder="Ingrese email" name="email">
+</fieldset>
+    <!-- Radio button -->
+    <h4>Raduio button</h4>
+    <input type="radio" name="opcion:color"> Rojo
+    <input type="radio" name="opcion:color"> Azul
+    <input type="radio" name="opcion:color"> Verde
+
+    <h4>check box</h4>
+    <!-- check box permiten marcar mas de una opcion -->
+    <input type="checkbox" name="curso"> Matematica
+    <input type="checkbox" name="curso"> Lenguaje
+    <input type="checkbox" name="curso"> HTML
+    <input type="checkbox" name="curso"> JavaScrip
+    <input type="checkbox" name="curso"> Css
+
+<!-- Los select (como combo box, menu desplegable) -->
+<h4>Select</h4>
+<!-- Los select se componene de 2 elementos el padre select y el hijo del option son cada opcion del selct -->
+<!-- Cuando yo envie la datael select va a enviar al que este seleccionado, por ende cada option debe tener un value, por que ese valor es el que envia -->
+<select name="curso_codigo">
+    <option value="html">html</option>
+    <option value="css">css</option>
+    <option value="js">JavaScript</option>
+    <option value="React js"> React js</option>
+</select>
+
+<!-- Por default la primera opcione es la que sale marcada -->
+<!-- los option tienen el artributo de selectd que permite marcar una opcion  y mostrarla -->
+<select name="paises">
+    <option value="Peru">Peru</option>
+    <option value="Colombia" selected>Colombia</option>
+    <option value="Chile">Chile</option>
+    <option value="Mexico"> Mexico</option>
+</select>
+
+<!-- TExtarea -->
+<!-- este elemento es una caja de texto muy grande, sirve para poner mensajes lagos o texto de desarrollo de un tema etc -->
+<h4>textarea</h4>
+<textarea placeholder="Ingrese un texto sobr usted" name="text_sobre_mi" rows="70" cols="120"></textarea>
+    <!-- Hay un input submit, ahora este submit significa que es el boton quien envia la informacion -->
+    <!-- Este submit puede ser boton o input -->
+    
+    <h4>Input submit</h4>
+    <input type="submit">
+    <button type="submit"> Enviar</button>
+</body>
+</html>
