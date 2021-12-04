@@ -1,0 +1,134 @@
+    /*** QUE ES CSS*/
+    /*Para poder ver reflejando mis estilo en mi pagina web yo debo vincular mi archivo. css en mi .html*/
+    /*Es un motor de estilos muy potente*/
+    /*Se acostumbra a tener un estilo glbal par aquitarle el pading y el margin a una pagina*/
+    /*padding: Es el espacio interno de un elemento*/
+    /*margin: Es el espacio externo de un elemento*
+
+    /* estilos globales 
+    para poder tener un estilo global para mi web yo puedo * */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Que etiqueta debo usar si quiero aplicar un estilo a todo mi body*/
+body{
+    /*Font-family: Es el atributo que me permite cambiar eltipo de letra*/
+    /*Actualmente las computadoras viene con el tipo de letra instalado*/
+    /*Monsetrat: Es un tip ode letra que no esta instalado, para poder usar un tipo externo podemos descargo y agregarlo al proyecto como un archivo o usar un link de referencia*/
+    /*Hay algunos fuentes (tipos de letra) que necesitan estar entre comillas, lpor tener nombres compuestos*/
+    /*Uno puede anidar tipo de letra*/
+    /*Porque puede pasar que por ejemplo Gill Sans no este instalado en sus maquinas para prevenir ponemos opciones multiples, si no encuentra a Gill Sans bucara a Helvetica y asi las siguientes opciones.*/
+    font-family: "Gill Sans", Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+
+}
+/*Como aplicar un estilo a una etiqueta especial*/
+
+/*h1 colo rojo*/
+h1 {
+    color: red;
+    /*text-align: center;*/
+    /*Background-color: Es el color de fondo de un elemento*/
+    background-color: #000;
+    /*Font-weight: Esto para poder asignarle un peso a las letras */
+    /*Esta en el rango 100 - 900, pero tambien la propiedad bold, es para el texto negrita*/
+    font-weight: bold;
+text-align: center;
+}
+
+
+section{
+    background-color: yellow;
+    /* border: Es un propiedad para poner un borde a un elemento, border recibe 3 cosas (tamaño de pixel, color, solid)*/
+
+    border: 3px solid #ab1234;
+}
+
+
+/*Como acceder a un elemento hijo*/
+/*Para poder acceeder a un elemento en cascada puede anidar la etiqueta*/
+/*Busca el elemento article y dentro de este debe estar el p y a ese p pon el color azul*/
+article p{
+    color: blue;
+    /*text-align: Permite poner le textoen 4 formas:*/
+    /*alineado a la derecha, izquierda, centrado, justificado*/
+    text-align: center;
+    /*font-size: Esto sirve par amanejar el tamaño de mi text*/
+    font-size: 22px;
+}
+
+
+/*Como puedo hacer que las li sean verdes*/
+li{
+    color:green;
+}
+/*Como puedo hacer que las ul sean gri*/
+/*Hacer que mi lista sea horizontal*/
+
+ul{
+    background-color: grey;
+    text-align: right;
+}
+/*pone horizontal*/
+ul li{
+    /*le quita la viñetas a mi li*/
+    list-style: none;
+    /*display: Esla propiedad en laque se puede mostrar un elemento, por default es display: block*/
+    display: inline;
+    
+}
+/*Este div contine a mi foto*/
+div{
+    border: 5px solid #000;
+    text-align: center;
+}
+
+img{
+    /*width yu height son par amanejar el ancho y la altura respectivamente la unidad basica son px, que sin pixele*/
+    width: 300px;
+    height: 300px;
+}
+
+nav{
+    text-align: right;
+    border: 2px solid red
+}
+
+a{
+    color: #000;
+    /*text-decoration: Es una propiedad poder asignar distintos estilos a un texto*/
+    /**/
+    text-decoration: none;
+}
+
+/*id*/
+/*id para poder acceder a un id que es html usamos el # + el nombre que le asignamos*/
+
+#titulo {
+    color: aquamarine;
+}
+
+#text_introduccion {
+    text-align: justify;
+}
+
+/*Con los ID tenemos un tema*/
+/*Porque en teoria los id deben ser unicos, es decir soo deben afectar a un elemento, pero en la practica se puede asignar, esto no es una buena practica*/
+
+/*Para poder repetir identificadores de elemntos se recomienda usar clases*/
+/*Para poder acceder a una clase usamos el . (punto)*/
+.texto_pagina {
+color: chocolate;
+}
+
+/*Se recomienda usar clases en vez de id, solo usemos id cuadno se necesario*/
+/*Ejemplo podemos usar id par ael logo central de pagina o par ael h1 de la web*/
+
+#logo {
+    width: 300px;
+    height: 100px;
+    border: 4px solid rgb(56, 255, 255);
+}
